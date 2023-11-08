@@ -1,0 +1,3 @@
+   [submodule "testCases"]
+       path = testCases
+       url = https://github.com/ktchery/playwrightRobotFramework
