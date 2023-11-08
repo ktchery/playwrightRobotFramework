@@ -10,7 +10,7 @@ Title Validation
     [Arguments]    ${URL}   ${title}=Amazon
     [Documentation]    This Keyword is to validate the title of the page.
 
-    New Browser    browser=chromium    headless=False
+    New Browser    browser=chromium    headless=True
     New Context    viewport={'width': 2880, 'height': 1800}
     New Page    ${URL}
     ${t_Title} =    Get Title    *=    ${title}    message="Title is not matching"
