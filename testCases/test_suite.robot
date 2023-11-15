@@ -13,6 +13,7 @@ suite teardown    Close Browser
 TC001
     [Tags]    TC_001    Clothing and Accessories
     [Documentation]    This is a test case to validate items in Clothing and Accessories
+    [Timeout]    1 minute
 
     Get Items in Amazon New Releases under Clothing and Accessories
     #where did this come from

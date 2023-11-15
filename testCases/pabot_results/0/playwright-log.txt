@@ -1,0 +1,119 @@
+{"level":30,"time":"2023-11-15T18:17:09.918Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Listening on 55412"}
+{"level":30,"time":"2023-11-15T18:17:09.972Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-11-15T18:17:09.972Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-11-15T18:17:09.979Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2023-11-15T18:17:10.502Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method newBrowser"}
+{"level":30,"time":"2023-11-15T18:17:10.508Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method newContext"}
+{"level":30,"time":"2023-11-15T18:17:10.509Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2023-11-15T18:17:10.509Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Trace file: "}
+{"level":30,"time":"2023-11-15T18:17:10.520Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Changed active context"}
+{"level":30,"time":"2023-11-15T18:17:10.520Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method newContext"}
+{"level":30,"time":"2023-11-15T18:17:10.525Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2023-11-15T18:17:10.525Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method newPage"}
+{"level":30,"time":"2023-11-15T18:17:11.164Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Video path: undefined"}
+{"level":30,"time":"2023-11-15T18:17:11.164Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Changed active page"}
+{"level":30,"time":"2023-11-15T18:17:13.167Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method newPage"}
+{"level":30,"time":"2023-11-15T18:17:13.289Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-11-15T18:17:13.310Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-11-15T18:17:13.315Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method click"}
+{"level":30,"time":"2023-11-15T18:17:13.316Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Strict mode is disabled, return first Locator: //a//span[text()=\"All\"] in page."}
+{"level":30,"time":"2023-11-15T18:17:13.492Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method click"}
+{"level":30,"time":"2023-11-15T18:17:13.499Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-11-15T18:17:13.500Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Strict mode is disabled, return first Locator: //div[contains(text(),\"trending\")]//parent::li//following-sibling::li/a[contains(text(),\"New Releases\")] in page."}
+{"level":30,"time":"2023-11-15T18:17:13.699Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2023-11-15T18:17:13.704Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method click"}
+{"level":30,"time":"2023-11-15T18:17:13.704Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Strict mode is disabled, return first Locator: //div[contains(text(),\"trending\")]//parent::li//following-sibling::li/a[contains(text(),\"New Releases\")] in page."}
+{"level":30,"time":"2023-11-15T18:17:14.479Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method click"}
+{"level":30,"time":"2023-11-15T18:17:14.484Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method getText"}
+{"level":30,"time":"2023-11-15T18:17:14.484Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Strict mode is disabled, return first Locator: //span[@id=\"zg_banner_text\"] in page."}
+{"level":30,"time":"2023-11-15T18:17:15.213Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Retrieved text for element //span[@id=\"zg_banner_text\"] containing Amazon Hot New Releases"}
+{"level":30,"time":"2023-11-15T18:17:15.213Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method getText"}
+{"level":30,"time":"2023-11-15T18:17:15.220Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method getElementCount"}
+{"level":30,"time":"2023-11-15T18:17:15.221Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Strict mode is disabled, return Locator: //h2[text()=\"Hot New Releases in Clothing & Accessories\"]//parent::div//parent::div//following-sibling::div[@class=\"a-row a-carousel-controls a-carousel-row a-carousel-has-buttons\"]//li//span/div in page."}
+{"level":30,"time":"2023-11-15T18:17:15.230Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method getElementCount"}
+{"level":30,"time":"2023-11-15T18:17:15.235Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method getText"}
+{"level":30,"time":"2023-11-15T18:17:15.236Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Strict mode is disabled, return first Locator: xpath=//h2[text()=\"Hot New Releases in Clothing & Accessories\"]//parent::div//parent::div//following-sibling::div[@class=\"a-row a-carousel-controls a-carousel-row a-carousel-has-buttons\"]//li[1]//span/div in page."}
+{"level":30,"time":"2023-11-15T18:17:15.250Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Retrieved text for element xpath=//h2[text()=\"Hot New Releases in Clothing & Accessories\"]//parent::div//parent::div//following-sibling::div[@class=\"a-row a-carousel-controls a-carousel-row a-carousel-has-buttons\"]//li[1]//span/div containing Adidas Official India Cricket ODI Fan Jersey"}
+{"level":30,"time":"2023-11-15T18:17:15.250Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method getText"}
+{"level":30,"time":"2023-11-15T18:17:15.254Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method getText"}
+{"level":30,"time":"2023-11-15T18:17:15.254Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Strict mode is disabled, return first Locator: xpath=//h2[text()=\"Hot New Releases in Clothing & Accessories\"]//parent::div//parent::div//following-sibling::div[@class=\"a-row a-carousel-controls a-carousel-row a-carousel-has-buttons\"]//li[2]//span/div in page."}
+{"level":30,"time":"2023-11-15T18:17:15.267Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Retrieved text for element xpath=//h2[text()=\"Hot New Releases in Clothing & Accessories\"]//parent::div//parent::div//following-sibling::div[@class=\"a-row a-carousel-controls a-carousel-row a-carousel-has-buttons\"]//li[2]//span/div containing Scott International Men's Quilted Puffer Jacket - Lightweight, Water Repellant, Elastic Cuffs, Zipped Pockets, Casual Winter Jacket…"}
+{"level":30,"time":"2023-11-15T18:17:15.267Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method getText"}
+{"level":30,"time":"2023-11-15T18:17:15.270Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method getText"}
+{"level":30,"time":"2023-11-15T18:17:15.271Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Strict mode is disabled, return first Locator: xpath=//h2[text()=\"Hot New Releases in Clothing & Accessories\"]//parent::div//parent::div//following-sibling::div[@class=\"a-row a-carousel-controls a-carousel-row a-carousel-has-buttons\"]//li[3]//span/div in page."}
+{"level":30,"time":"2023-11-15T18:17:15.280Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Retrieved text for element xpath=//h2[text()=\"Hot New Releases in Clothing & Accessories\"]//parent::div//parent::div//following-sibling::div[@class=\"a-row a-carousel-controls a-carousel-row a-carousel-has-buttons\"]//li[3]//span/div containing Yuneek Women/Girl Winter Warm Fake Translucent Fleece Legging Thigh High Black Free Size"}
+{"level":30,"time":"2023-11-15T18:17:15.280Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method getText"}
+{"level":30,"time":"2023-11-15T18:17:15.284Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method getText"}
+{"level":30,"time":"2023-11-15T18:17:15.284Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Strict mode is disabled, return first Locator: xpath=//h2[text()=\"Hot New Releases in Clothing & Accessories\"]//parent::div//parent::div//following-sibling::div[@class=\"a-row a-carousel-controls a-carousel-row a-carousel-has-buttons\"]//li[4]//span/div in page."}
+{"level":30,"time":"2023-11-15T18:17:15.294Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Retrieved text for element xpath=//h2[text()=\"Hot New Releases in Clothing & Accessories\"]//parent::div//parent::div//following-sibling::div[@class=\"a-row a-carousel-controls a-carousel-row a-carousel-has-buttons\"]//li[4]//span/div containing DHRUVI TRENDZ Women Kurta Set"}
+{"level":30,"time":"2023-11-15T18:17:15.294Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method getText"}
+{"level":30,"time":"2023-11-15T18:17:15.299Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method getText"}
+{"level":30,"time":"2023-11-15T18:17:15.299Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Strict mode is disabled, return first Locator: xpath=//h2[text()=\"Hot New Releases in Clothing & Accessories\"]//parent::div//parent::div//following-sibling::div[@class=\"a-row a-carousel-controls a-carousel-row a-carousel-has-buttons\"]//li[5]//span/div in page."}
+{"level":30,"time":"2023-11-15T18:17:15.309Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Retrieved text for element xpath=//h2[text()=\"Hot New Releases in Clothing & Accessories\"]//parent::div//parent::div//following-sibling::div[@class=\"a-row a-carousel-controls a-carousel-row a-carousel-has-buttons\"]//li[5]//span/div containing GoSriKi Women's Cotton Blend Straight Printed Kurta with Pant & Dupatta"}
+{"level":30,"time":"2023-11-15T18:17:15.309Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method getText"}
+{"level":30,"time":"2023-11-15T18:17:15.313Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method getText"}
+{"level":30,"time":"2023-11-15T18:17:15.313Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Strict mode is disabled, return first Locator: xpath=//h2[text()=\"Hot New Releases in Clothing & Accessories\"]//parent::div//parent::div//following-sibling::div[@class=\"a-row a-carousel-controls a-carousel-row a-carousel-has-buttons\"]//li[6]//span/div in page."}
+{"level":30,"time":"2023-11-15T18:17:15.323Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Retrieved text for element xpath=//h2[text()=\"Hot New Releases in Clothing & Accessories\"]//parent::div//parent::div//following-sibling::div[@class=\"a-row a-carousel-controls a-carousel-row a-carousel-has-buttons\"]//li[6]//span/div containing LEOTUDE Men's Classic Loopknit Bomber Jacket with Zipper Closure and Side Pockets (Color Black)"}
+{"level":30,"time":"2023-11-15T18:17:15.323Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method getText"}
+{"level":30,"time":"2023-11-15T18:17:15.331Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method click"}
+{"level":30,"time":"2023-11-15T18:17:15.331Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Strict mode is disabled, return first Locator: //div[text()=\"Adidas Official India Cricket ODI Fan Jersey\"] in page."}
+{"level":30,"time":"2023-11-15T18:17:15.732Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method click"}
+{"level":30,"time":"2023-11-15T18:17:15.737Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-11-15T18:17:15.737Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Strict mode is disabled, return first Locator: //input[@value=\"Add to Cart\"] in page."}
+{"level":30,"time":"2023-11-15T18:17:16.648Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2023-11-15T18:17:16.652Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method click"}
+{"level":30,"time":"2023-11-15T18:17:16.652Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Strict mode is disabled, return first Locator: //input[@value=\"Add to Cart\"] in page."}
+{"level":30,"time":"2023-11-15T18:17:17.161Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method click"}
+{"level":30,"time":"2023-11-15T18:17:17.168Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-11-15T18:17:17.170Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-11-15T18:17:17.172Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-11-15T18:17:17.173Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-11-15T18:17:17.176Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method click"}
+{"level":30,"time":"2023-11-15T18:17:17.176Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Strict mode is disabled, return first Locator: //a//span[text()=\"All\"] in page."}
+{"level":30,"time":"2023-11-15T18:17:17.334Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method click"}
+{"level":30,"time":"2023-11-15T18:17:17.338Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2023-11-15T18:17:17.338Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Strict mode is disabled, return first Locator: //div[contains(text(),\"trending\")]//parent::li//following-sibling::li/a[contains(text(),\"New Releases\")] in page."}
+{"level":30,"time":"2023-11-15T18:17:20.339Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Timeout 3000ms exceeded.
+=========================== logs ===========================
+waiting for locator('xpath=//div[contains(text(),"trending")]//parent::li//following-sibling::li/a[contains(text(),"New Releases")]').first() to be visible
+============================================================
+    at waitForElementState (/Users/kirondechery/anaconda3/lib/python3.11/site-packages/Browser/wrapper/index.js:8427:19)
+    at async PlaywrightServer.waitForElementsState (/Users/kirondechery/anaconda3/lib/python3.11/site-packages/Browser/wrapper/index.js:9923:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2023-11-15T18:17:20.344Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2023-11-15T18:17:20.344Z","pid":76317,"hostname":"Kirondes-MBP.lan","Take screenshot with options: ":{"path":"/Users/kirondechery/PycharmProjects/pythonProjectBITA/demoFramework/testCases/pabot_results/0/browser/screenshot/fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2023-11-15T18:17:21.334Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2023-11-15T18:17:21.353Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method click"}
+{"level":30,"time":"2023-11-15T18:17:21.353Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Strict mode is disabled, return first Locator: //a//span[text()=\"All\"] in page."}
+{"level":30,"time":"2023-11-15T18:17:21.490Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method click"}
+{"level":30,"time":"2023-11-15T18:17:21.493Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method click"}
+{"level":30,"time":"2023-11-15T18:17:21.493Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Strict mode is disabled, return first Locator: //div[contains(text(),\"trending\")]//parent::li//following-sibling::li/a[contains(text(),\"New Releases\")] in page."}
+{"level":30,"time":"2023-11-15T18:17:23.549Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method click"}
+{"level":30,"time":"2023-11-15T18:17:23.554Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method getText"}
+{"level":30,"time":"2023-11-15T18:17:23.554Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Strict mode is disabled, return first Locator: //span[@id=\"zg_banner_text\"] in page."}
+{"level":30,"time":"2023-11-15T18:17:24.268Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Retrieved text for element //span[@id=\"zg_banner_text\"] containing Amazon Hot New Releases"}
+{"level":30,"time":"2023-11-15T18:17:24.268Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method getText"}
+{"level":30,"time":"2023-11-15T18:17:24.277Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method getElementCount"}
+{"level":30,"time":"2023-11-15T18:17:24.277Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Strict mode is disabled, return Locator: //h2[text()=\"Hot New Releases in Computers & Accessories\"]//parent::div//parent::div//following-sibling::div[@class=\"a-row a-carousel-controls a-carousel-row a-carousel-has-buttons\"]//li//span/div in page."}
+{"level":30,"time":"2023-11-15T18:17:24.282Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method getElementCount"}
+{"level":30,"time":"2023-11-15T18:17:24.290Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-11-15T18:17:24.291Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-11-15T18:17:24.294Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2023-11-15T18:17:24.343Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Removed page=a9b700e8-b253-4342-8f88-eb4f68e60b44 from context=eab56620-e2c6-48c8-8513-ac13b583d5cd page stack"}
+{"level":30,"time":"2023-11-15T18:17:24.562Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (/Users/kirondechery/anaconda3/lib/python3.11/site-packages/Browser/wrapper/index.js:9389:15)
+    at PlaywrightServer.getActiveBrowser (/Users/kirondechery/anaconda3/lib/python3.11/site-packages/Browser/wrapper/index.js:9908:59)
+    at PlaywrightServer.setTimeout (/Users/kirondechery/anaconda3/lib/python3.11/site-packages/Browser/wrapper/index.js:10154:57)
+    at handleUnary (/Users/kirondechery/anaconda3/lib/python3.11/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:833:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+=============================================================
+{"level":30,"time":"2023-11-15T18:17:24.569Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2023-11-15T18:17:24.569Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2023-11-15T18:17:24.574Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2023-11-15T18:17:24.574Z","pid":76317,"hostname":"Kirondes-MBP.lan","msg":"End of node method closeAllBrowsers"}

@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 6.1.1 (Python 3.11.4 on darwin)" generated="20231115 13:17:24.937" rpa="false" schemaversion="4">
+<suite id="s1" name="Test Suite" source="/Users/kirondechery/PycharmProjects/pythonProjectBITA/demoFramework/testCases/test_suite.robot">
+<kw name="Open Browser and Validate Title" library="title_validation" type="SETUP">
+<doc>This is to Validate the title of the page</doc>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>60s</arg>
+<arg>2s</arg>
+<arg>Title Validation</arg>
+<arg>https://www.amazon.in/</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="Title Validation" library="login_page">
+<arg>https://www.amazon.in/</arg>
+<doc>This Keyword is to validate the title of the page.</doc>
+<kw name="New Browser" library="Browser">
+<arg>browser=chromium</arg>
+<arg>headless=False</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20231115 13:17:09.977" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/kirondechery/PycharmProjects/pythonProjectBITA/demoFramework/testCases/pabot_results/0/browser/traces/a4545107-59bb-4b85-ab20-3ed685dae518"}</msg>
+<msg timestamp="20231115 13:17:10.504" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/kirondechery/PycharmProjects/pythonProjectBITA/demoFramework/testCases/pabot_results/0/browser/traces/a4545107-59bb-4b85-ab20-3ed685dae518"}</msg>
+<status status="PASS" starttime="20231115 13:17:09.977" endtime="20231115 13:17:10.504"/>
+</kw>
+<kw name="New Context" library="Browser">
+<arg>viewport={'width': 2880, 'height': 1800}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<msg timestamp="20231115 13:17:10.506" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "hideRfBrowser": "",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 1800,
+    "width": 2880
+  }
+}</msg>
+<msg timestamp="20231115 13:17:10.522" level="INFO">Successfully created context. </msg>
+<msg timestamp="20231115 13:17:10.522" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'hideRfBrowser': '', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 1800, 'width': 2880}}</msg>
+<status status="PASS" starttime="20231115 13:17:10.505" endtime="20231115 13:17:10.522"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>60s</arg>
+<arg>2s</arg>
+<arg>New Page</arg>
+<arg>${URL}</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="New Page" library="Browser">
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<msg timestamp="20231115 13:17:13.169" level="INFO">Successfully initialized new page object and opened url: https://www.amazon.in/</msg>
+<status status="PASS" starttime="20231115 13:17:10.523" endtime="20231115 13:17:13.169"/>
+</kw>
+<status status="PASS" starttime="20231115 13:17:10.523" endtime="20231115 13:17:13.170"/>
+</kw>
+<kw name="Get Title" library="Browser">
+<var>${t_Title}</var>
+<arg>*=</arg>
+<arg>${title}</arg>
+<arg>message="Title is not matching"</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20231115 13:17:13.185" level="INFO">Title: 'Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in'</msg>
+<msg timestamp="20231115 13:17:13.185" level="INFO">${t_Title} = Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in</msg>
+<status status="PASS" starttime="20231115 13:17:13.170" endtime="20231115 13:17:13.185"/>
+</kw>
+<kw name="Get user name and Password" library="login_page">
+<doc>Get username and Password</doc>
+<kw name="Create List" library="BuiltIn">
+<var>${a}</var>
+<arg>username</arg>
+<arg>password</arg>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20231115 13:17:13.186" level="INFO">${a} = ['username', 'password']</msg>
+<status status="PASS" starttime="20231115 13:17:13.186" endtime="20231115 13:17:13.186"/>
+</kw>
+<kw name="Set Log Level" library="BuiltIn">
+<arg>NONE</arg>
+<doc>Sets the log threshold to the specified level and returns the old level.</doc>
+<status status="PASS" starttime="20231115 13:17:13.186" endtime="20231115 13:17:13.187"/>
+</kw>
+<kw name="Get Parameter" library="decode">
+<var>${r_username}</var>
+<arg>${a}[0]</arg>
+<status status="PASS" starttime="20231115 13:17:13.187" endtime="20231115 13:17:13.189"/>
+</kw>
+<kw name="Get Parameter" library="decode">
+<var>${r_password}</var>
+<arg>${a}[1]</arg>
+<status status="PASS" starttime="20231115 13:17:13.189" endtime="20231115 13:17:13.285"/>
+</kw>
+<kw name="Set Log Level" library="BuiltIn">
+<arg>INFO</arg>
+<doc>Sets the log threshold to the specified level and returns the old level.</doc>
+<msg timestamp="20231115 13:17:13.286" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20231115 13:17:13.285" endtime="20231115 13:17:13.286"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${r_username} ${r_password}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231115 13:17:13.286" level="INFO">admin4577@gmail.com abcd</msg>
+<status status="PASS" starttime="20231115 13:17:13.286" endtime="20231115 13:17:13.286"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${r_username}</arg>
+<arg>${r_password}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231115 13:17:13.286" endtime="20231115 13:17:13.287"/>
+</kw>
+<status status="PASS" starttime="20231115 13:17:13.185" endtime="20231115 13:17:13.287"/>
+</kw>
+<status status="PASS" starttime="20231115 13:17:09.976" endtime="20231115 13:17:13.287"/>
+</kw>
+<status status="PASS" starttime="20231115 13:17:09.976" endtime="20231115 13:17:13.287"/>
+</kw>
+<status status="PASS" starttime="20231115 13:17:09.975" endtime="20231115 13:17:13.287"/>
+</kw>
+<test id="s1-t1" name="TC001" line="13">
+<kw name="Get Items in Amazon New Releases under Clothing and Accessories" library="trending">
+<doc>Validate the correct title and items of page Clothing and Accessories</doc>
+<kw name="Validate Hot New Releases" library="trending_page">
+<var>${t_title}</var>
+<doc>This keyword is to verify hot new releases</doc>
+<kw name="Click" library="Browser">
+<arg>${trending.all_nav_bar}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231115 13:17:13.313" endtime="20231115 13:17:13.494"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${t_status}</var>
+<arg>Wait For Elements State</arg>
+<arg>${trending.new_release_nav_bar}</arg>
+<arg>visible</arg>
+<arg>timeout=3s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Wait For Elements State" library="Browser">
+<arg>${trending.new_release_nav_bar}</arg>
+<arg>visible</arg>
+<arg>timeout=3s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20231115 13:17:13.701" level="INFO">Waited for Element with selector //div[contains(text(),"trending")]//parent::li//following-sibling::li/a[contains(text(),"New Releases")] at state visible</msg>
+<status status="PASS" starttime="20231115 13:17:13.495" endtime="20231115 13:17:13.701"/>
+</kw>
+<msg timestamp="20231115 13:17:13.701" level="INFO">${t_status} = True</msg>
+<status status="PASS" starttime="20231115 13:17:13.495" endtime="20231115 13:17:13.701"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${t_status} == False</arg>
+<arg>Click</arg>
+<arg>${trending.all_nav_bar}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" starttime="20231115 13:17:13.702" endtime="20231115 13:17:13.702"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${trending.new_release_nav_bar}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231115 13:17:13.702" endtime="20231115 13:17:14.481"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${r_title}</var>
+<arg>${trending.title_text}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20231115 13:17:15.215" level="INFO">Text: 'Amazon Hot New Releases'</msg>
+<msg timestamp="20231115 13:17:15.215" level="INFO">${r_title} = Amazon Hot New Releases</msg>
+<status status="PASS" starttime="20231115 13:17:14.482" endtime="20231115 13:17:15.215"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"Title of Page "${r_title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231115 13:17:15.215" endtime="20231115 13:17:15.216"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${r_title}</arg>
+<arg>Hot New Releases</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20231115 13:17:15.217" endtime="20231115 13:17:15.218"/>
+</kw>
+<msg timestamp="20231115 13:17:15.218" level="INFO">${t_title} = Amazon Hot New Releases</msg>
+<status status="PASS" starttime="20231115 13:17:13.313" endtime="20231115 13:17:15.218"/>
+</kw>
+<kw name="Get New Releases item Clothing and Accessories" library="trending_page">
+<var>${t_items}</var>
+<arg>${t_title}</arg>
+<doc>This keyword is to get the office prodcuts list items</doc>
+<kw name="Get Element Count" library="Browser">
+<var>${t_items_Count}</var>
+<arg>${trending.cloth_and_access_items}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<msg timestamp="20231115 13:17:15.232" level="INFO">${t_items_Count} = 6</msg>
+<status status="PASS" starttime="20231115 13:17:15.219" endtime="20231115 13:17:15.232"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{r_new_items}</var>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20231115 13:17:15.233" level="INFO">@{r_new_items} = [ ]</msg>
+<status status="PASS" starttime="20231115 13:17:15.232" endtime="20231115 13:17:15.233"/>
+</kw>
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>1</value>
+<value>${t_items_Count}+1</value>
+<iter>
+<var name="${i}">1</var>
+<kw name="Get Text" library="Browser">
+<var>${t_item}</var>
+<arg>xpath=//h2[text()="Hot New Releases in Clothing &amp; Accessories"]//parent::div//parent::div//following-sibling::div[@class="a-row a-carousel-controls a-carousel-row a-carousel-has-buttons"]//li[${i}]//span/div</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20231115 13:17:15.251" level="INFO">Text: 'Adidas Official India Cricket ODI Fan Jersey'</msg>
+<msg timestamp="20231115 13:17:15.251" level="INFO">${t_item} = Adidas Official India Cricket ODI Fan Jersey</msg>
+<status status="PASS" starttime="20231115 13:17:15.233" endtime="20231115 13:17:15.251"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${t_item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231115 13:17:15.251" endtime="20231115 13:17:15.252"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${r_new_items}</arg>
+<arg>${t_item}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20231115 13:17:15.252" endtime="20231115 13:17:15.252"/>
+</kw>
+<status status="PASS" starttime="20231115 13:17:15.233" endtime="20231115 13:17:15.252"/>
+</iter>
+<iter>
+<var name="${i}">2</var>
+<kw name="Get Text" library="Browser">
+<var>${t_item}</var>
+<arg>xpath=//h2[text()="Hot New Releases in Clothing &amp; Accessories"]//parent::div//parent::div//following-sibling::div[@class="a-row a-carousel-controls a-carousel-row a-carousel-has-buttons"]//li[${i}]//span/div</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20231115 13:17:15.268" level="INFO">Text: "Scott International Men's Quilted Puffer Jacket - Lightweight, Water Repellant, Elastic Cuffs, Zipped Pockets, Casual Winter Jacket…"</msg>
+<msg timestamp="20231115 13:17:15.268" level="INFO">${t_item} = Scott International Men's Quilted Puffer Jacket - Lightweight, Water Repellant, Elastic Cuffs, Zipped Pockets, Casual Winter Jacket…</msg>
+<status status="PASS" starttime="20231115 13:17:15.253" endtime="20231115 13:17:15.268"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${t_item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231115 13:17:15.268" endtime="20231115 13:17:15.269"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${r_new_items}</arg>
+<arg>${t_item}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20231115 13:17:15.269" endtime="20231115 13:17:15.269"/>
+</kw>
+<status status="PASS" starttime="20231115 13:17:15.253" endtime="20231115 13:17:15.269"/>
+</iter>
+<iter>
+<var name="${i}">3</var>
+<kw name="Get Text" library="Browser">
+<var>${t_item}</var>
+<arg>xpath=//h2[text()="Hot New Releases in Clothing &amp; Accessories"]//parent::div//parent::div//following-sibling::div[@class="a-row a-carousel-controls a-carousel-row a-carousel-has-buttons"]//li[${i}]//span/div</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20231115 13:17:15.282" level="INFO">Text: 'Yuneek Women/Girl Winter Warm Fake Translucent Fleece Legging Thigh High Black Free Size'</msg>
+<msg timestamp="20231115 13:17:15.282" level="INFO">${t_item} = Yuneek Women/Girl Winter Warm Fake Translucent Fleece Legging Thigh High Black Free Size</msg>
+<status status="PASS" starttime="20231115 13:17:15.270" endtime="20231115 13:17:15.282"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${t_item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231115 13:17:15.282" endtime="20231115 13:17:15.282"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${r_new_items}</arg>
+<arg>${t_item}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20231115 13:17:15.283" endtime="20231115 13:17:15.283"/>
+</kw>
+<status status="PASS" starttime="20231115 13:17:15.270" endtime="20231115 13:17:15.283"/>
+</iter>
+<iter>
+<var name="${i}">4</var>
+<kw name="Get Text" library="Browser">
+<var>${t_item}</var>
+<arg>xpath=//h2[text()="Hot New Releases in Clothing &amp; Accessories"]//parent::div//parent::div//following-sibling::div[@class="a-row a-carousel-controls a-carousel-row a-carousel-has-buttons"]//li[${i}]//span/div</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20231115 13:17:15.295" level="INFO">Text: 'DHRUVI TRENDZ Women Kurta Set'</msg>
+<msg timestamp="20231115 13:17:15.296" level="INFO">${t_item} = DHRUVI TRENDZ Women Kurta Set</msg>
+<status status="PASS" starttime="20231115 13:17:15.283" endtime="20231115 13:17:15.296"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${t_item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231115 13:17:15.296" endtime="20231115 13:17:15.297"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${r_new_items}</arg>
+<arg>${t_item}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20231115 13:17:15.297" endtime="20231115 13:17:15.297"/>
+</kw>
+<status status="PASS" starttime="20231115 13:17:15.283" endtime="20231115 13:17:15.297"/>
+</iter>
+<iter>
+<var name="${i}">5</var>
+<kw name="Get Text" library="Browser">
+<var>${t_item}</var>
+<arg>xpath=//h2[text()="Hot New Releases in Clothing &amp; Accessories"]//parent::div//parent::div//following-sibling::div[@class="a-row a-carousel-controls a-carousel-row a-carousel-has-buttons"]//li[${i}]//span/div</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20231115 13:17:15.310" level="INFO">Text: "GoSriKi Women's Cotton Blend Straight Printed Kurta with Pant &amp; Dupatta"</msg>
+<msg timestamp="20231115 13:17:15.310" level="INFO">${t_item} = GoSriKi Women's Cotton Blend Straight Printed Kurta with Pant &amp; Dupatta</msg>
+<status status="PASS" starttime="20231115 13:17:15.298" endtime="20231115 13:17:15.310"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${t_item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231115 13:17:15.311" endtime="20231115 13:17:15.311"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${r_new_items}</arg>
+<arg>${t_item}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20231115 13:17:15.312" endtime="20231115 13:17:15.312"/>
+</kw>
+<status status="PASS" starttime="20231115 13:17:15.298" endtime="20231115 13:17:15.312"/>
+</iter>
+<iter>
+<var name="${i}">6</var>
+<kw name="Get Text" library="Browser">
+<var>${t_item}</var>
+<arg>xpath=//h2[text()="Hot New Releases in Clothing &amp; Accessories"]//parent::div//parent::div//following-sibling::div[@class="a-row a-carousel-controls a-carousel-row a-carousel-has-buttons"]//li[${i}]//span/div</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20231115 13:17:15.324" level="INFO">Text: "LEOTUDE Men's Classic Loopknit Bomber Jacket with Zipper Closure and Side Pockets (Color Black)"</msg>
+<msg timestamp="20231115 13:17:15.325" level="INFO">${t_item} = LEOTUDE Men's Classic Loopknit Bomber Jacket with Zipper Closure and Side Pockets (Color Black)</msg>
+<status status="PASS" starttime="20231115 13:17:15.312" endtime="20231115 13:17:15.325"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${t_item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231115 13:17:15.325" endtime="20231115 13:17:15.325"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${r_new_items}</arg>
+<arg>${t_item}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20231115 13:17:15.326" endtime="20231115 13:17:15.326"/>
+</kw>
+<status status="PASS" starttime="20231115 13:17:15.312" endtime="20231115 13:17:15.326"/>
+</iter>
+<status status="PASS" starttime="20231115 13:17:15.233" endtime="20231115 13:17:15.326"/>
+</for>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"Items of page "${title}" are the following " ${r_new_items}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231115 13:17:15.327" endtime="20231115 13:17:15.327"/>
+</kw>
+<msg timestamp="20231115 13:17:15.327" level="INFO">${t_items} = ['Adidas Official India Cricket ODI Fan Jersey', "Scott International Men's Quilted Puffer Jacket - Lightweight, Water Repellant, Elastic Cuffs, Zipped Pockets, Casual Winter Jacket…", 'Yuneek Women/G...</msg>
+<status status="PASS" starttime="20231115 13:17:15.219" endtime="20231115 13:17:15.327"/>
+</kw>
+<kw name="Validate presence of item" library="trending_page">
+<arg>${t_items}</arg>
+<doc>This keyword is to verify the presence of item</doc>
+<for flavor="IN">
+<var>${t_item}</var>
+<value>@{new_items}</value>
+<iter>
+<var name="${t_item}">Adidas Official India Cricket ODI Fan Jersey</var>
+<kw name="Log" library="BuiltIn">
+<arg>${t_item}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231115 13:17:15.329" level="INFO">Adidas Official India Cricket ODI Fan Jersey</msg>
+<status status="PASS" starttime="20231115 13:17:15.328" endtime="20231115 13:17:15.329"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${t_status}</var>
+<arg>Should Contain</arg>
+<arg>${t_item}</arg>
+<arg>${items}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${t_item}</arg>
+<arg>${items}</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20231115 13:17:15.329" endtime="20231115 13:17:15.330"/>
+</kw>
+<msg timestamp="20231115 13:17:15.330" level="INFO">${t_status} = True</msg>
+<status status="PASS" starttime="20231115 13:17:15.329" endtime="20231115 13:17:15.330"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${t_status} == True</arg>
+<arg>Click</arg>
+<arg>//div[text()="${t_item}"]</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click" library="Browser">
+<arg>//div[text()="${t_item}"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231115 13:17:15.330" endtime="20231115 13:17:15.734"/>
+</kw>
+<status status="PASS" starttime="20231115 13:17:15.330" endtime="20231115 13:17:15.734"/>
+</kw>
+<kw name="Exit For Loop If" library="BuiltIn">
+<arg>${t_status} == True</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<msg timestamp="20231115 13:17:15.735" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20231115 13:17:15.734" endtime="20231115 13:17:15.735"/>
+</kw>
+<status status="PASS" starttime="20231115 13:17:15.328" endtime="20231115 13:17:15.735"/>
+</iter>
+<status status="PASS" starttime="20231115 13:17:15.328" endtime="20231115 13:17:15.735"/>
+</for>
+<kw name="Wait For Elements State" library="Browser">
+<arg>${trending.add_to_cart_btn}</arg>
+<arg>visible</arg>
+<arg>5s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20231115 13:17:16.649" level="INFO">Waited for Element with selector //input[@value="Add to Cart"] at state visible</msg>
+<status status="PASS" starttime="20231115 13:17:15.735" endtime="20231115 13:17:16.650"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${trending.add_to_cart_btn}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231115 13:17:16.650" endtime="20231115 13:17:17.163"/>
+</kw>
+<status status="PASS" starttime="20231115 13:17:15.328" endtime="20231115 13:17:17.163"/>
+</kw>
+<status status="PASS" starttime="20231115 13:17:13.312" endtime="20231115 13:17:17.163"/>
+</kw>
+<doc>This is a test case to validate items in Clothing and Accessories</doc>
+<tag>Clothing and Accessories</tag>
+<tag>TC_001</tag>
+<timeout value="1 minute"/>
+<status status="PASS" starttime="20231115 13:17:13.287" endtime="20231115 13:17:17.164"/>
+</test>
+<test id="s1-t2" name="TC002" line="22">
+<kw name="Get Items in Amazon New Releases under Computers and Accessories" library="trending">
+<doc>Validate the correct title and items of page Computers and Accessories</doc>
+<kw name="Validate Hot New Releases" library="trending_page">
+<var>${t_title}</var>
+<doc>This keyword is to verify hot new releases</doc>
+<kw name="Click" library="Browser">
+<arg>${trending.all_nav_bar}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231115 13:17:17.175" endtime="20231115 13:17:17.336"/>
+</kw>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${t_status}</var>
+<arg>Wait For Elements State</arg>
+<arg>${trending.new_release_nav_bar}</arg>
+<arg>visible</arg>
+<arg>timeout=3s</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Wait For Elements State" library="Browser">
+<arg>${trending.new_release_nav_bar}</arg>
+<arg>visible</arg>
+<arg>timeout=3s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20231115 13:17:21.336" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231115 13:17:21.336" level="INFO">See also file:///Users/kirondechery/PycharmProjects/pythonProjectBITA/demoFramework/testCases/pabot_results/0/playwright-log.txt for additional details.</msg>
+<msg timestamp="20231115 13:17:21.337" level="FAIL">TimeoutError: locator.waitFor: Timeout 3000ms exceeded.
+=========================== logs ===========================
+waiting for locator('xpath=//div[contains(text(),"trending")]//parent::li//following-sibling::li/a[contains(text(),"New Releases")]').first() to be visible
+============================================================
+Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</msg>
+<status status="FAIL" starttime="20231115 13:17:17.336" endtime="20231115 13:17:21.351"/>
+</kw>
+<msg timestamp="20231115 13:17:21.351" level="INFO">${t_status} = False</msg>
+<status status="PASS" starttime="20231115 13:17:17.336" endtime="20231115 13:17:21.351"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${t_status} == False</arg>
+<arg>Click</arg>
+<arg>${trending.all_nav_bar}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click" library="Browser">
+<arg>${trending.all_nav_bar}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231115 13:17:21.352" endtime="20231115 13:17:21.491"/>
+</kw>
+<status status="PASS" starttime="20231115 13:17:21.351" endtime="20231115 13:17:21.492"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>${trending.new_release_nav_bar}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20231115 13:17:21.492" endtime="20231115 13:17:23.552"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${r_title}</var>
+<arg>${trending.title_text}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<msg timestamp="20231115 13:17:24.271" level="INFO">Text: 'Amazon Hot New Releases'</msg>
+<msg timestamp="20231115 13:17:24.271" level="INFO">${r_title} = Amazon Hot New Releases</msg>
+<status status="PASS" starttime="20231115 13:17:23.552" endtime="20231115 13:17:24.271"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"Title of Page "${r_title}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231115 13:17:24.272" endtime="20231115 13:17:24.273"/>
+</kw>
+<kw name="Should Contain" library="BuiltIn">
+<arg>${r_title}</arg>
+<arg>Hot New Releases</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" starttime="20231115 13:17:24.273" endtime="20231115 13:17:24.274"/>
+</kw>
+<msg timestamp="20231115 13:17:24.274" level="INFO">${t_title} = Amazon Hot New Releases</msg>
+<status status="PASS" starttime="20231115 13:17:17.175" endtime="20231115 13:17:24.274"/>
+</kw>
+<kw name="Get New Releases item Computers and Accessories" library="trending_page">
+<var>${t_items}</var>
+<arg>${t_title}</arg>
+<doc>This keyword is to get the computer and accessories list items</doc>
+<kw name="Get Element Count" library="Browser">
+<var>${t_items_Count}</var>
+<arg>${trending.comp_and_access_items}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<msg timestamp="20231115 13:17:24.283" level="INFO">${t_items_Count} = 0</msg>
+<status status="PASS" starttime="20231115 13:17:24.275" endtime="20231115 13:17:24.283"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{r_new_items}</var>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20231115 13:17:24.284" level="INFO">@{r_new_items} = [ ]</msg>
+<status status="PASS" starttime="20231115 13:17:24.283" endtime="20231115 13:17:24.284"/>
+</kw>
+<for flavor="IN RANGE">
+<var>${i}</var>
+<value>1</value>
+<value>${t_items_Count}+1</value>
+<iter>
+<var name="${i}"/>
+<kw name="Get Text" library="Browser">
+<var>${t_item}</var>
+<arg>xpath=//h2[text()="Hot New Releases in Computers &amp; Accessories"]//parent::div//parent::div//following-sibling::div[@class="a-row a-carousel-controls a-carousel-row a-carousel-has-buttons"]//li[${i}]//span/div</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20231115 13:17:24.285" endtime="20231115 13:17:24.285"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${t_item}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20231115 13:17:24.285" endtime="20231115 13:17:24.285"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${r_new_items}</arg>
+<arg>${t_item}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20231115 13:17:24.286" endtime="20231115 13:17:24.286"/>
+</kw>
+<status status="NOT RUN" starttime="20231115 13:17:24.284" endtime="20231115 13:17:24.286"/>
+</iter>
+<status status="NOT RUN" starttime="20231115 13:17:24.284" endtime="20231115 13:17:24.286"/>
+</for>
+<kw name="Log To Console" library="BuiltIn">
+<arg>"Items of page "${title}" are the following " ${r_new_items}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20231115 13:17:24.287" endtime="20231115 13:17:24.287"/>
+</kw>
+<msg timestamp="20231115 13:17:24.287" level="INFO">${t_items} = []</msg>
+<status status="PASS" starttime="20231115 13:17:24.275" endtime="20231115 13:17:24.287"/>
+</kw>
+<status status="PASS" starttime="20231115 13:17:17.175" endtime="20231115 13:17:24.287"/>
+</kw>
+<doc>This is a test case to validate items in Computers and Accessories</doc>
+<tag>Computers and Acccessories</tag>
+<tag>TC_002</tag>
+<status status="PASS" starttime="20231115 13:17:17.171" endtime="20231115 13:17:24.288"/>
+</test>
+<kw name="Close Browser" library="Browser" type="TEARDOWN">
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<msg timestamp="20231115 13:17:24.563" level="INFO">Closed browser</msg>
+<status status="PASS" starttime="20231115 13:17:24.293" endtime="20231115 13:17:24.563"/>
+</kw>
+<doc>This is a test suite for Amazon project</doc>
+<status status="PASS" starttime="20231115 13:17:09.177" endtime="20231115 13:17:24.564"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Clothing and Accessories</stat>
+<stat pass="1" fail="0" skip="0">Computers and Acccessories</stat>
+<stat pass="1" fail="0" skip="0">TC_001</stat>
+<stat pass="1" fail="0" skip="0">TC_002</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Test Suite">Test Suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

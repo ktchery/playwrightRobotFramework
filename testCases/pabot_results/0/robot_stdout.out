@@ -1,0 +1,22 @@
+==============================================================================
+Test Suite :: This is a test suite for Amazon project                         
+==============================================================================
+admin4577@gmail.com
+TC001 :: This is a test case to validate items in Clothing and Acc... "Title of Page "Amazon Hot New Releases
+Adidas Official India Cricket ODI Fan Jersey
+Scott International Men's Quilted Puffer Jacket - Lightweight, Water Repellant, Elastic Cuffs, Zipped Pockets, Casual Winter Jacket…
+Yuneek Women/Girl Winter Warm Fake Translucent Fleece Legging Thigh High Black Free Size
+DHRUVI TRENDZ Women Kurta Set
+GoSriKi Women's Cotton Blend Straight Printed Kurta with Pant & Dupatta
+LEOTUDE Men's Classic Loopknit Bomber Jacket with Zipper Closure and Side Pockets (Color Black)
+"Items of page "Amazon Hot New Releases" are the following " ['Adidas Official India Cricket ODI Fan Jersey', "Scott International Men's Quilted Puffer Jacket - Lightweight, Water Repellant, Elastic Cuffs, Zipped Pockets, Casual Winter Jacket…", 'Yuneek Women/Girl Winter Warm Fake Translucent Fleece Legging Thigh High Black Free Size', 'DHRUVI TRENDZ Women Kurta Set', "GoSriKi Women's Cotton Blend Straight Printed Kurta with Pant & Dupatta", "LEOTUDE Men's Classic Loopknit Bomber Jacket with Zipper Closure and Side Pockets (Color Black)"]
+| PASS |
+------------------------------------------------------------------------------
+TC002 :: This is a test case to validate items in Computers and Ac... "Title of Page "Amazon Hot New Releases
+"Items of page "Amazon Hot New Releases" are the following " []
+| PASS |
+------------------------------------------------------------------------------
+Test Suite :: This is a test suite for Amazon project                 | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Output:  /Users/kirondechery/PycharmProjects/pythonProjectBITA/demoFramework/testCases/pabot_results/0/output.xml
