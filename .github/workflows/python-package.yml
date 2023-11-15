@@ -49,4 +49,4 @@ jobs:
     - name: Test with RobotFramework
       run: |
         cd testCases
-        robot test_suite.robot
+        pabot test_suite.robot
